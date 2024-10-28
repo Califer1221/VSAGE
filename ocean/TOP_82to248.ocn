@@ -1,0 +1,5 @@
+load "./ocean/DCAP/20pts/CCO82/TOP_CCO82_15N_DCAP_20pts.ocn"
+load "./ocean/DCAP/20pts/CCO124/TOP_CCO124_15N_DCAP_20pts.ocn"
+load "./ocean/DCAP/20pts/CCO164/TOP_CCO164_15N_DCAP_20pts.ocn"
+load "./ocean/DCAP/20pts/CCO206/TOP_CCO206_15N_DCAP_20pts.ocn"
+load "./ocean/DCAP/20pts/CCO248/TOP_CCO248_15N_DCAP_20pts.ocn"

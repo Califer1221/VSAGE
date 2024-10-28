@@ -1,0 +1,29 @@
+simulator( 'spectre )
+design(	 "/nethome/kli416/simulation/Delay_CCO_ring124_DCAP8/spectre/schematic/netlist/netlist")
+resultsDir( "/nethome/kli416/simulation/Delay_CCO_ring124_DCAP8/spectre/schematic" )
+modelFile( 
+    '("/tools/tsmc/tsmc65ic61/tsmcN65/../models/spectre/toplevel.scs" "tt_lib")
+)
+analysis('tran ?stop "30u"  ?errpreset "conservative"  )
+desVar(	  "idc" 10u	)
+envOption(
+	'termDirectionMismatch  "ignore" 
+	'termMismatch  "ignore" 
+	'analysisOrder  list("tran") 
+)
+option( ?categ 'turboOpts
+	'disableVddOverride  nil 
+)
+saveOption( 'currents "selected" )
+save( 'v "/X<1>" )
+converge( 'ic "/X<1>" "0" )
+converge( 'ic "/XN<1>" "1" )
+temp( 27 ) 
+run()
+selectResult( 'tran )
+plot(getData("/X<1>") )
+plot( (delay = delay(?wf1 v("/X<1>" ?result "tran") ?value1 0.5 ?edge1 "rising" ?nth1 10 ?wf2 v("/X<1>" ?result "tran") ?value2 (VDD / 2) ?edge2 "rising" ?nth2 11)) )
+plot( (delay2 = delay(?wf1 v("/X<1>" ?result "tran") ?value1 0.5 ?edge1 "rising" ?nth1 10 ?wf2 v("/X<1>" ?result "tran") ?value2 0.5 ?edge2 "rising" ?nth2 11)) )
+plot( (average(v("/X<1>" ?result "tran")) * 2) )
+Delay_9th = (delay = delay(?wf1 v("/X<1>" ?result "tran") ?value1 0.15 ?edge1 "rising" ?nth1 8 ?wf2 v("/X<1>" ?result "tran") ?value2 0.15 ?edge2 "rising" ?nth2 9))
+plot( Delay_9th ?expr '( "Delay_9th" ) )

@@ -1,0 +1,143 @@
+; simulate less pts(20pts)
+;this script split VDDLIST to 3 catagory to speed up simulation
+;up to 210 uA
+;11/27/2021
+
+simulator( 'spectre )
+design(	 "/nethome/kli416/simulation/Delay_CCO_ring206_noDCAP/spectre/schematic/netlist/netlist")
+resultsDir( "/nethome/kli416/simulation/Delay_CCO_ring206_noDCAP/spectre/schematic" )
+modelFile( 
+    '("/tools/tsmc/tsmc65ic61/tsmcN65/../models/spectre/toplevel.scs" "tt_lib")
+)
+envOption(
+	'termDirectionMismatch  "ignore" 
+	'termMismatch  "ignore" 
+	'analysisOrder  list("tran") 
+)
+option( ?categ 'turboOpts
+	'uniMode  "APS" 
+)
+;saveOption( 'currents "selected" )
+save( 'v "/X<1>" )
+converge( 'ic "/X<1>" "0" )
+converge( 'ic "/XN<1>" "1" )
+
+temp( 27 ) 
+
+
+
+
+
+
+CLOADLIST= list(0)
+IDCLIST = list(1u 2u 3u 4u 5u 6u 7u 8u 9u)
+IDCLIST2 = list(10u 30u 50u 70u 90u 110u 130u 150u 170u 190u)
+
+IDCLIST3 = list(210u)
+
+
+
+
+temp( 27 ) 
+selectResult( 'tran )
+
+
+out=outfile("./ocean/DCAP/20pts/result/CCO206_20pts/Delay_CCO_ring206_15N_noDCAP_20pts.txt" "w")
+
+foreach(IDC IDCLIST
+	foreach( CLOAD CLOADLIST
+	
+		delay=0
+		desVar( "idc" IDC )
+		desVar( "cload" CLOAD)
+		converge( 'ic "/X<1>" "0" )
+        	converge( 'ic "/XN<1>" "1" )
+
+		analysis('tran ?stop "4.5u"  ?errpreset "conservative"  )
+		save( 'v "/X<1>" )
+                save('v "/VDD")
+		run()
+		
+		;vctrl = (average(v("/X<1>" ?result "tran")) * 2)
+                vctrl = average(v("/VDD" ?result "tran"))
+		R = vctrl/IDC
+		
+
+		
+		delay = delay(?wf1 v("/X<1>" ?result "tran") ?value1 0.15 ?edge1 "rising" ?nth1 8 ?wf2 v("/X<1>" ?result "tran") ?value2 0.15 ?edge2 "rising" ?nth2 9)
+
+			
+		fprintf(out "%1.5e \t" delay)
+		fprintf(out "%1.5e \t" vctrl)
+		fprintf(out "%1.5e \t" R)		
+
+	)
+	fprintf(out "\n")
+
+)
+
+foreach(IDC IDCLIST2
+	foreach( CLOAD CLOADLIST
+	
+		delay=0
+		desVar( "idc" IDC )
+		desVar( "cload" CLOAD)
+		converge( 'ic "/X<1>" "0" )
+        	converge( 'ic "/XN<1>" "1" )
+
+		analysis('tran ?stop "550n"  ?errpreset "conservative"  )
+		save( 'v "/X<1>" )
+                save('v "/VDD")
+		run()
+		
+		;vctrl = (average(v("/X<1>" ?result "tran")) * 2)
+                vctrl = average(v("/VDD" ?result "tran"))
+		R = vctrl/IDC
+		
+
+		
+		delay = delay(?wf1 v("/X<1>" ?result "tran") ?value1 0.15 ?edge1 "rising" ?nth1 8 ?wf2 v("/X<1>" ?result "tran") ?value2 0.15 ?edge2 "rising" ?nth2 9)
+
+			
+		fprintf(out "%1.5e \t" delay)
+		fprintf(out "%1.5e \t" vctrl)
+		fprintf(out "%1.5e \t" R)		
+
+	)
+	fprintf(out "\n")
+
+)
+
+foreach(IDC IDCLIST3
+	foreach( CLOAD CLOADLIST
+	
+		delay=0
+		desVar( "idc" IDC )
+		desVar( "cload" CLOAD)
+		converge( 'ic "/X<1>" "0" )
+        	converge( 'ic "/XN<1>" "1" )
+
+		analysis('tran ?stop "45n"  ?errpreset "conservative"  )
+		save( 'v "/X<1>" )
+                save('v "/VDD")
+		run()
+		
+		;vctrl = (average(v("/X<1>" ?result "tran")) * 2)
+                vctrl = average(v("/VDD" ?result "tran"))
+		R = vctrl/IDC
+		
+
+		
+		delay = delay(?wf1 v("/X<1>" ?result "tran") ?value1 0.15 ?edge1 "rising" ?nth1 8 ?wf2 v("/X<1>" ?result "tran") ?value2 0.15 ?edge2 "rising" ?nth2 9)
+
+			
+		fprintf(out "%1.5e \t" delay)
+		fprintf(out "%1.5e \t" vctrl)
+		fprintf(out "%1.5e \t" R)		
+
+	)
+	fprintf(out "\n")
+
+)
+
+close(out)

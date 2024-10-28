@@ -1,0 +1,7 @@
+load "./ocean/DCAP/20pts/CCO124/CCO124_15N_noDCAP_20pts.ocn"
+load "./ocean/DCAP/20pts/CCO124/CCO124_15N_DCAP_20pts.ocn"
+load "./ocean/DCAP/20pts/CCO124/CCO124_15N_DCAP4_20pts.ocn"
+load "./ocean/DCAP/20pts/CCO124/CCO124_15N_DCAP8_20pts.ocn"
+load "./ocean/DCAP/20pts/CCO124/CCO124_15N_DCAP16_20pts.ocn"
+load "./ocean/DCAP/20pts/CCO124/CCO124_15N_DCAP32_20pts.ocn"
+load "./ocean/DCAP/20pts/CCO124/CCO124_15N_DCAP64_20pts.ocn"
