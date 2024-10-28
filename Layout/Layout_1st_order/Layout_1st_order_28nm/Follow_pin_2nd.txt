@@ -1,0 +1,4 @@
+::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox 
+ uiSetTool select 
+ setSrouteMode -viaConnectToShape { ring blockring } 
+ 

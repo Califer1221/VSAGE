@@ -1,0 +1,66 @@
+
+getIoFlowFlag 
+setIoFlowFlag 0 
+floorPlan -site core12T -s 275.0000 218.0000 30 30 30 30 
+uiSetTool select 
+getIoFlowFlag 
+selectObject Module I0 
+createInstGroup PD10 -fence 39.0000 130.8000 45.0000 134.8000 
+setInstGroupPhyHier PD10 
+addInstToInstGroup PD10 {I0 } 
+deselectModule I0 
+
+selectObject Module I1 
+createInstGroup PD9 -fence 290.0000 130.8000 296.0000 134.8000 
+setInstGroupPhyHier PD9 
+addInstToInstGroup PD9 {I1 } 
+deselectModule I1 
+
+selectObject Module I8 
+createInstGroup PD8 -fence 81.0000 75.0000 163.0000 239.0000 
+setInstGroupPhyHier PD8 
+addInstToInstGroup PD8 {I8 } 
+deselectModule I8 
+
+selectObject Module I9 
+createInstGroup PD7 -fence 172.0000 75.0000 254.0000 239.0000 
+setInstGroupPhyHier PD7 
+addInstToInstGroup PD7 {I9 } 
+deselectModule I9 
+
+selectObject Module I6 
+createInstGroup PD6 -fence 135.5000 39.0000 199.5000 51.6000 
+setInstGroupPhyHier PD6 
+addInstToInstGroup PD6 {I6 } 
+deselectModule I6 
+
+selectObject Module I7 
+createInstGroup PD5 -fence 163.9000 60.6000 171.1000 66.0000 
+setInstGroupPhyHier PD5 
+addInstToInstGroup PD5 {I7 } 
+deselectModule I7 
+
+selectObject Module I4 
+createInstGroup PD4 -fence 39.0000 60.6000 72.0000 64.2000 
+setInstGroupPhyHier PD4 
+addInstToInstGroup PD4 {I4 } 
+deselectModule I4 
+
+selectObject Module I5 
+createInstGroup PD3 -fence 263.0000 60.6000 296.0000 64.2000 
+setInstGroupPhyHier PD3 
+addInstToInstGroup PD3 {I5 } 
+deselectModule I5 
+
+selectObject Module I3 
+createInstGroup PD1 -fence 263.0000 73.2000 296.0000 121.8000 
+setInstGroupPhyHier PD1 
+addInstToInstGroup PD1 {I3 } 
+deselectModule I3 
+
+selectObject Module I2 
+createInstGroup PD2 -fence 39.0000 73.2000 72.0000 121.8000 
+setInstGroupPhyHier PD2 
+addInstToInstGroup PD2 {I2 } 
+deselectModule I2 
+

@@ -1,0 +1,25 @@
+::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox 
+ uiSetTool select 
+ setSrouteMode -viaConnectToShape { ring blockring } 
+ sroute -connect { corePin } -layerChangeRange { M1(1) M9(9) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(10) } -area { 37.0000 69.4000 65.0000 109.4000 } -nets { VCTRLP } -allowLayerChange 1 -targetViaLayerRange { M1(1) AP(10) }
+::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox 
+ uiSetTool select 
+ setSrouteMode -viaConnectToShape { ring blockring } 
+ sroute -connect { corePin } -layerChangeRange { M1(1) M9(9) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(10) } -area { 160.0000 69.4000 188.0000 109.4000 } -nets { VCTRLN } -allowLayerChange 1 -targetViaLayerRange { M1(1) AP(10) }
+::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox 
+ uiSetTool select 
+ setSrouteMode -viaConnectToShape { ring blockring } 
+ sroute -connect { corePin } -layerChangeRange { M1(1) M9(9) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(10) } -area { 160.0000 56.8000 188.0000 64.4000 } -nets { VBUF } -allowLayerChange 1 -targetViaLayerRange { M1(1) AP(10) }
+::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox 
+ uiSetTool select 
+ setSrouteMode -viaConnectToShape { ring blockring } 
+ sroute -connect { corePin } -layerChangeRange { M1(1) M9(9) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(10) } -area { 37.0000 56.8000 65.0000 64.4000 } -nets { VBUF2 } -allowLayerChange 1 -targetViaLayerRange { M1(1) AP(10) }
+::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox 
+ uiSetTool select 
+ setSrouteMode -viaConnectToShape { ring blockring } 
+ sroute -connect { corePin } -layerChangeRange { M1(1) M9(9) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(10) } -area { 106.9000 56.8000 118.1000 66.2000 } -nets { VREFP } -allowLayerChange 1 -targetViaLayerRange { M1(1) AP(10) }
+::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox 
+ uiSetTool select 
+ setSrouteMode -viaConnectToShape { ring blockring } 
+ sroute -connect { corePin } -layerChangeRange { M1(1) M9(9) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(10) } -area { 83.5000 37.0000 141.5000 51.8000 } -nets { VDD } -allowLayerChange 1 -targetViaLayerRange { M1(1) AP(10) }
+deselectAll 

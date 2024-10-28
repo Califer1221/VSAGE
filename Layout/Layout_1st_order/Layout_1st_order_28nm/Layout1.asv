@@ -1,0 +1,14 @@
+Rin = [27, 9];
+CCO = [29, 72];
+BUF = [15, 30];
+DIG = [116, 13];
+DAC_BUF = [34, 3.6];
+DAC = [43, 110];
+
+axis([0 180 0 180])
+rectangle('Position',[32 163 Rin]);
+rectangle('Position',[32 90 CCO]);
+rectangle('Position',[38 55 BUF]);
+rectangle('Position',[50 33 DIG]);
+rectangle('Position',[1 2 DAC_BUF]);
+rectangle('Position',[1 2 DAC]);

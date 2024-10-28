@@ -1,0 +1,19 @@
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_lef_file {\  /nethome/kli416/work/TSMC28/Tech_files/PRTF_EDI_28nm_Cad_V19_1a/PR_tech/Cadence/LefHeader/HVH/tsmcn28_10lm5X2Y2ZRDL.tlef\
+/nethome/kli416/work/TSMC28/Tech_files/lef/tcbn28hpcplusbwp12t30p140lvt.lef\
+/nethome/kli416/work/TSMC28/Tech_files/lef/DCAP_RES_v3.lef}
+#tcbn28hpcplusbwp12t30p140lvt.lef  tcbn28_LK_v1
+set init_design_settop 0
+set init_verilog /nethome/kli416/work/TSMC28/Innovus/Design/ASPDAC_2nd_order/verilog/CCO_2nd_DSM_15N_1S_10kRin_v1_200M_28nm.v
+#CCO_DSM_15N_5S_3kRin_v1
+#Buffer.v
+set init_mmmc_file Default.view
+init_design

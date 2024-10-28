@@ -1,0 +1,18 @@
+
+getIoFlowFlag 
+setIoFlowFlag 0 
+floorPlan -coreMarginsBy die -site core -s 67.0000 129.6000 30 30 30 30 
+uiSetTool select 
+getIoFlowFlag 
+selectObject Module I4 
+createInstGroup PD4 -fence 39.0000 64.2000 88.0000 69.6000 
+setInstGroupPhyHier PD4 
+addInstToInstGroup PD4 {I4 } 
+deselectModule I4 
+
+selectObject Module I2 
+createInstGroup PD2 -fence 39.0000 78.6000 88.0000 150.6000 
+setInstGroupPhyHier PD2 
+addInstToInstGroup PD2 {I2 } 
+deselectModule I2 
+

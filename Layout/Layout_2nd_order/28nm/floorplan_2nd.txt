@@ -1,0 +1,92 @@
+
+getIoFlowFlag 
+setIoFlowFlag 0 
+floorPlan  -site core12T -s 212.1100 119.6000 30 30 30 30 
+uiSetTool select 
+getIoFlowFlag 
+selectObject Module I0 
+createInstGroup PD0 -fence 121.4550 125.2000 132.4550 129.2000 
+setInstGroupPhyHier PD0 
+addInstToInstGroup PD0 {I0 } 
+deselectModule I0 
+
+selectObject Module I1 
+createInstGroup PD1 -fence 139.6550 125.2000 150.6550 129.2000 
+setInstGroupPhyHier PD1 
+addInstToInstGroup PD1 {I1 } 
+deselectModule I1 
+
+selectObject Module I2 
+createInstGroup PD2 -fence 108.4550 103.0000 132.4550 118.0000 
+setInstGroupPhyHier PD2 
+addInstToInstGroup PD2 {I2 } 
+deselectModule I2 
+
+selectObject Module I3 
+createInstGroup PD3 -fence 139.6550 103.0000 163.6550 118.0000 
+setInstGroupPhyHier PD3 
+addInstToInstGroup PD3 {I3 } 
+deselectModule I3 
+
+selectObject Module I4 
+createInstGroup PD4 -fence 129.0550 88.8000 143.0550 95.8000 
+setInstGroupPhyHier PD4 
+addInstToInstGroup PD4 {I4 } 
+deselectModule I4 
+
+selectObject Module I4_2 
+createInstGroup PD4 -fence 129.0550 88.8000 143.0550 95.8000 
+setInstGroupPhyHier PD4 
+addInstToInstGroup PD4 {I4_2 } 
+deselectModule I4_2 
+
+selectObject Module I5 
+createInstGroup PD5 -fence 121.4550 59.4000 132.4550 67.4000 
+setInstGroupPhyHier PD5 
+addInstToInstGroup PD5 {I5 } 
+deselectModule I5 
+
+selectObject Module I6 
+createInstGroup PD6 -fence 139.6550 59.4000 150.6550 67.4000 
+setInstGroupPhyHier PD6 
+addInstToInstGroup PD6 {I6 } 
+deselectModule I6 
+
+selectObject Module I7 
+createInstGroup PD7 -fence 102.4550 37.2000 132.4550 52.2000 
+setInstGroupPhyHier PD7 
+addInstToInstGroup PD7 {I7 } 
+deselectModule I7 
+
+selectObject Module I8 
+createInstGroup PD8 -fence 139.6550 37.2000 169.6550 52.2000 
+setInstGroupPhyHier PD8 
+addInstToInstGroup PD8 {I8 } 
+deselectModule I8 
+
+selectObject Module I9 
+createInstGroup PD9 -fence 37.2000 37.2000 45.2000 41.2000 
+setInstGroupPhyHier PD9 
+addInstToInstGroup PD9 {I9 } 
+deselectModule I9 
+
+selectObject Module I10 
+createInstGroup PD10 -fence 226.9100 37.2000 234.9100 41.2000 
+setInstGroupPhyHier PD10 
+addInstToInstGroup PD10 {I10 } 
+deselectModule I10 
+
+selectObject Module I11 
+createInstGroup PD11 -fence 37.2000 48.4000 95.2550 142.4000 
+setInstGroupPhyHier PD11 
+addInstToInstGroup PD11 {I11 } 
+deselectModule I11 
+
+selectObject Module I12 
+createInstGroup PD12 -fence 176.8550 48.4000 234.9100 142.4000 
+setInstGroupPhyHier PD12 
+addInstToInstGroup PD12 {I12 } 
+deselectModule I12 
+
+
+

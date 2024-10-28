@@ -1,0 +1,9 @@
+::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox 
+ uiSetTool select 
+ setSrouteMode -viaConnectToShape { ring blockring } 
+ sroute -connect { corePin } -layerChangeRange { M1(1) M9(9) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(10) } -area { 37.0000 76.6000 90.0000 152.6000 } -nets { VCTRLP } -allowLayerChange 1 -targetViaLayerRange { M1(1) AP(10) }
+::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox 
+ uiSetTool select 
+ setSrouteMode -viaConnectToShape { ring blockring } 
+ sroute -connect { corePin } -layerChangeRange { M1(1) M9(9) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(10) } -area { 37.0000 62.2000 90.0000 71.6000 } -nets { VBUF2 } -allowLayerChange 1 -targetViaLayerRange { M1(1) AP(10) }
+deselectAll 

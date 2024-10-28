@@ -1,0 +1,14 @@
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_lef_file ../../tech_files/lef_LK_v4.lef
+set init_design_settop 0
+set init_verilog /nethome/kli416/work/TSMC65/CCO_DSM_gen/CCO_DSM_63N_4S_6kRin_v1.v
+set init_mmmc_file Default.view
+init_design

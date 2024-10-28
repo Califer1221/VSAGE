@@ -1,0 +1,9 @@
+
+
+addWellTap -cell TAPCELLBWP12T30P140 -cellInterval {10.0000} -prefix WELLTAP -area { 37.0000 71.2000 74.0000 123.8000 } 
+addWellTap -cell TAPCELLBWP12T30P140 -cellInterval {10.0000} -prefix WELLTAP -area { 261.0000 71.2000 298.0000 123.8000 } 
+addWellTap -cell TAPCELLBWP12T30P140 -cellInterval {10.0000} -prefix WELLTAP -area { 261.0000 58.6000 298.0000 66.2000 } 
+addWellTap -cell TAPCELLBWP12T30P140 -cellInterval {10.0000} -prefix WELLTAP -area { 37.0000 58.6000 74.0000 66.2000 } 
+addWellTap -cell TAPCELLBWP12T30P140 -cellInterval {10.0000} -prefix WELLTAP -area { 161.9000 58.6000 173.1000 68.0000 } 
+addWellTap -cell TAPCELLBWP12T30P140 -cellInterval {10.0000} -prefix WELLTAP -area { 133.5000 37.0000 201.5000 53.6000 } 
+
