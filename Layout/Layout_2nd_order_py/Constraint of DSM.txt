@@ -1,0 +1,42 @@
+</Constraints>
+    <Constraint type="Guide" name="I0" llx=39.0000 lly=143.4000 urx=48.0000 ury=147.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Guide" name="I1" llx=263.0000 lly=143.4000 urx=272.0000 ury=147.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Guide" name="I8" llx=84.0000 lly=78.6000 urx=151.0000 ury=211.6000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Guide" name="I9" llx=160.0000 lly=78.6000 urx=227.0000 ury=211.6000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Guide" name="I6" llx=105.5000 lly=39.0000 urx=205.5000 ury=55.2000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Guide" name="I7" llx=144.7000 lly=64.2000 urx=166.3000 ury=69.6000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Guide" name="I4" llx=39.0000 lly=64.2000 urx=75.0000 ury=71.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Guide" name="I5" llx=236.0000 lly=64.2000 urx=272.0000 ury=71.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Guide" name="I3" llx=236.0000 lly=80.4000 urx=272.0000 ury=134.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Guide" name="I2" llx=39.0000 lly=80.4000 urx=75.0000 ury=134.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Fence" name="PD1" llx=236.0000 lly=80.4000 urx=272.0000 ury=134.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Fence" name="PD2" llx=39.0000 lly=80.4000 urx=75.0000 ury=134.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Fence" name="PD3" llx=236.0000 lly=64.2000 urx=272.0000 ury=71.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Fence" name="PD4" llx=39.0000 lly=64.2000 urx=75.0000 ury=71.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Fence" name="PD5" llx=144.7000 lly=64.2000 urx=166.3000 ury=69.6000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Fence" name="PD6" llx=105.5000 lly=39.0000 urx=205.5000 ury=55.2000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Fence" name="PD7" llx=160.0000 lly=78.6000 urx=227.0000 ury=211.6000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Fence" name="PD8" llx=84.0000 lly=78.6000 urx=151.0000 ury=211.6000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Fence" name="PD9" llx=263.0000 lly=143.4000 urx=272.0000 ury=147.4000 nrBox=0 > 
+    </Constraint>
+    <Constraint type="Fence" name="PD10" llx=39.0000 lly=143.4000 urx=48.0000 ury=147.4000 nrBox=0 > 
+    </Constraint>
+</Constraints>
