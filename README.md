@@ -19,13 +19,12 @@ MATLAB file:
 ## 2. Front-end synthesis
 
 parameter gen
+
 `front_end_syn`
 
 parameter optimization
 
 `GradientD_v6`
-
-`CCO_DSM_evaluator`
 
 circuit gen
 
