@@ -19,8 +19,7 @@ MATLAB file:
 ## 2. Front-end synthesis
 
 parameter gen
-
-`solve_param_RDAC_N_v5`
+`front_end_syn`
 
 parameter optimization
 
